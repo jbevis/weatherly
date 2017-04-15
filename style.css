@@ -1,4 +1,5 @@
 body {
+  color: #1F474C;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -7,7 +8,7 @@ body {
   background-image: url('../images/background.png');
 }
 
-
+/*current weather*/
 header {
   text-align: center;
 }
@@ -15,7 +16,7 @@ header {
 #logo {
   padding: 20px 0;
   font-size: 50px;
-  color: #1F474C;
+  /*color: #1F474C;*/
   margin: 0;
 }
 
@@ -30,24 +31,25 @@ header {
 }
 
 button {
+  border: none;
   background-color: #F8EF55;
   width: 150px;
-  height: 34px;
+  height: 35px;
   font-size: 14px;
   font-family: 'Quicksand', sans-serif;
 }
 
-#main-text{
+.main-text{
   text-align: center;
-  color: #1F474C;
+  /*color: #1F474C;*/
 }
 
-#welcome1 {
+.welcome1 {
   font-size: 30px;
   padding-top: 10px
 }
 
-#welcome2 {
+.welcome2 {
   font-size: 25px
 }
 
@@ -56,27 +58,70 @@ button {
   color: #1F474C;
 }
 
-#day-location p {
+.day-location {
+  padding-top: 25px;
+}
+
+.day-location p {
   display: inline;
-  padding-top: 20px
-
 }
 
-#location {
+.location {
   font-size: 30px;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
-#day {
-  font-size: 25px;
+.day {
+  font-size: 20px;
 }
 
-#temp-img img {
+.temp-img img {
+  display: inline-block;
+  width: 60px;
+}
+
+.current-temp {
+  margin: 20px 0 20px -20px;
+  font-size: 50px;
   display: inline-block;
 }
 
-#current-temp {
-  margin-left: -20px;
-  font-size: 40px;
+.high {
+  display: inline;
+  padding-right: 25px;
+}
+.low {
+  display: inline;
+}
+
+span {
+  font-weight: 700;
+}
+
+/*Hourly*/
+
+.render-hourly {
+  text-align: center;
+  margin-top: 60px;
+}
+
+
+h4 {
+  margin-bottom: 18px;
+}
+
+.horizontal-scroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+/*Hour Card*/
+.day-card {
   display: inline-block;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.day-card p {
+  margin: 0;
 }
