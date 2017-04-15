@@ -5,7 +5,9 @@ body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
+  background-color: #5d8a28;
   background-image: url('../images/background.png');
+  background-repeat: no-repeat;
 }
 
 /*current weather*/
@@ -105,7 +107,6 @@ span {
   margin-top: 60px;
 }
 
-
 h4 {
   margin-bottom: 18px;
 }
@@ -113,15 +114,50 @@ h4 {
 .horizontal-scroll {
   overflow: auto;
   white-space: nowrap;
+
 }
 
 /*Hour Card*/
-.day-card {
+.hour-card {
   display: inline-block;
   padding: 0 15px;
   text-align: center;
 }
 
-.day-card p {
+.hour-card p {
   margin: 0;
+}
+
+/*Daily*/
+.render-daily {
+  text-align: center;
+  margin: 40px;
+}
+
+.daily-forecast {
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  /*flex-wrap: wrap;
+  max-width: 600px;*/
+
+}
+
+/*Day Card*/
+.day-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 450px;
+  margin: auto;
+}
+
+.day-card p {
+  display: inline-block;
+}
+
+.day-card img {
+  width: 35px;
 }
