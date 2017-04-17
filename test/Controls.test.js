@@ -1,5 +1,4 @@
 import Controls from '../lib/components/Controls'
-import Weatherly from '../lib/components/Weatherly'
 import React from 'react'
 import { shallow, mount } from 'enzyme'
 import StubData from './StubData'
@@ -22,7 +21,32 @@ describe('Controls: ', () => {
 
     submitBtn.simulate('click');
     expect(wrapper.state('location')).toEqual('')
+  })
 
+  it('should render an input field onto the DOM', () => {
+    let wrapper = shallow(< Controls getWeather={()=>{}}/>)
+
+    expect(wrapper.containsAllMatchingElements([
+      <input id = "input-field"
+             type = "text"
+             placeholder = "Search by valid zip code or by City, State"
+            />
+    ])).toEqual(true)
+  })
+
+  it.skip('should render an input field onto the DOM', () => {
+    // console.log('component methods');
+    // console.log(Controls.prototype.handleSearchResults(stubData));
+  })
+
+  it('should render a submit button onto the DOM', () => {
+    let wrapper = shallow(< Controls getWeather={()=>{}}/>)
+
+    expect(wrapper.containsAllMatchingElements([
+      <button id="submitButton">
+        Submit
+      </button>
+    ])).toEqual(true)
   })
 
 })
