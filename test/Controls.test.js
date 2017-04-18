@@ -34,11 +34,6 @@ describe('Controls: ', () => {
     ])).toEqual(true)
   })
 
-  it.skip('should render an input field onto the DOM', () => {
-    // console.log('component methods');
-    // console.log(Controls.prototype.handleSearchResults(stubData));
-  })
-
   it('should render a submit button onto the DOM', () => {
     let wrapper = shallow(< Controls getWeather={()=>{}}/>)
 

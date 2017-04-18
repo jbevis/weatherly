@@ -10,22 +10,19 @@ import cleanHourlyData from '../lib/cleanHourlyData'
 describe('Weatherly: ', () => {
 
   it.skip('should be able to set state with correct data', () => {
-    let wrapper = shallow(< Weatherly />)
-    let controls = shallow( < Controls getWeather={()=>{}} />)
-    let input = controls.find('#input-field')
-    let submitBtn = controls.find('#submitButton')
-    let hourlyTest = cleanHourlyData(StubData)
+    const wrapper = shallow(< Weatherly />);
+    const controls = shallow(< Controls getWeather={() => {}} />);
+    const input = controls.find('#input-field');
+    const submitBtn = controls.find('#submitButton');
+    const hourlyTest = cleanHourlyData(StubData);
 
     expect(hourlyTest.length).toEqual(7)
     // expect(wrapper.state('tenDay')).toEqual([])
 
-    input.simulate('change', {target: {value: 'Denver, CO'}})
+    input.simulate('change', { target: {value: 'Denver, CO' } })
     submitBtn.simulate('click');
 
     expect(wrapper.state('hourly').length).toEqual(7)
     // expect(wrapper.state('tenDay').length).toEqual(10)
-
-
-  })
-
-})
+  });
+});
