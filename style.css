@@ -8,10 +8,12 @@ body {
   background-color: #5d8a28;
   background-image: url('../images/background.png');
   background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /*current weather*/
 header {
+  margin-top: 25px;
   text-align: center;
 }
 
@@ -95,7 +97,9 @@ button {
 }
 
 .description {
-  margin: 20px;
+  max-width:70%;
+  margin: auto;
+  margin-top: 20px;
 }
 
 span {
@@ -119,7 +123,7 @@ h4 {
 }
 
 ::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 /*Hour Card*/
@@ -184,6 +188,10 @@ display: none;
   .horizontal-scroll {
     max-width: 85%
   }
+
+  .description {
+    max-width: 85%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -198,5 +206,9 @@ display: none;
     margin-right: 0;
     width: 270px;
     height: 33px;
+  }
+
+  .description {
+    max-width: 85%;
   }
 }
