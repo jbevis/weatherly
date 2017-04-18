@@ -9,7 +9,6 @@ describe('RenderCurrent', () => {
   it('should render the current location to the DOM', () => {
     let current = cleanCurrentData(StubData)
     let wrapper = shallow(< RenderCurrent currentWeather={current} />)
-    console.log(wrapper.debug())
     let currentLocation = wrapper.find('.location')
 
     expect(currentLocation.text()).toEqual('Denver')
@@ -23,7 +22,7 @@ describe('RenderCurrent', () => {
     expect(currentTemp.text()).toEqual('65 F')
   })
 
-  it.only('should render the current weekday to the DOM', () => {
+  it('should render the current weekday to the DOM', () => {
     let current = cleanCurrentData(StubData)
     let wrapper = shallow(< RenderCurrent currentWeather={current} />)
     let currentDay = wrapper.find('.day')
