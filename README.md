@@ -14,9 +14,11 @@ Web application built using React JS, and designed for introduction to building 
   - In addition to learning how to write stateful and presentational components, we also worked extensively with Enzyme and Jest testing libraries to hone our testing abilities in React.
 
 ### Resources
+
 [Weather Underground](https://www.wunderground.com/)
 
 ### Screen Shot
+
 ![](http://recordit.co/Aybn2GpkeQ.gif/notify)
 
 ### Installation & Setup Instructions
