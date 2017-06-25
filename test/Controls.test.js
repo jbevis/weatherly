@@ -37,4 +37,14 @@ describe('Controls: ', () => {
       </button>,
     ])).toEqual(true);
   });
+
+  it('.submitButton should be called when button is clicked.', () => {
+    let mockFn = jest.fn()
+    let wrapper = shallow(<Controls getWeather = {mockFn}  />)
+    let button = wrapper.find('button')
+
+    button.simulate('click')
+
+    expect(mockFn).toHaveBeenCalledTimes(1)
+  })
 });
