@@ -17,7 +17,7 @@ Web application built using React JS, and designed for introduction to building 
 [Weather Underground](https://www.wunderground.com/)
 
 ### Screen Shot
-![](http://g.recordit.co/Aybn2GpkeQ.gif)
+![](http://recordit.co/Aybn2GpkeQ.gif/notify)
 
 ### Installation & Setup Instructions
 
