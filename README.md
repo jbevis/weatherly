@@ -1,31 +1,29 @@
-# Weatherly
+## Weatherly
 
-In this project we were tasked with building a working weather application useing React js and testing with enzyme and jest.
+### Project Details
 
-## Motivation
+Web application built using React JS, and designed for introduction to building in React, using ajax calls for api data, and testing using enzyme and jest testing libraries. User can search for weather by location, and receive current weather forecast, hourly, and ten day.
 
-This project is part of the Front end engineering curriculum at Turing School of Software and Design for module 2.
+[Weatherly](https://weatherly-jbevis.herokuapp.com/)
+* Click on link
+* Enter a location to view weather
 
-## Code Example
+### Reflection
+  - This was a paired project assigned in Module 2 of the Front End Engineering program at Turing School of Software & Design.
+  - This was our first introduction to writing in React, and working with data received from an API.
+  - In addition to learning how to write stateful and presentational components, we also worked extensively with Enzyme and Jest testing libraries to hone our testing abilities in React.
 
-```
-handleWeatherSearch(weatherObj) {
-    this.setState({
-      location: '',
-      current: cleanCurrentData(weatherObj),
-      hourly: cleanHourlyData(weatherObj),
-      tenDay: cleanTenDayData(weatherObj),
-    });
-  }
+### Resources
+[Weather Underground](https://www.wunderground.com/)
 
-  getWeather(location) {
-    const cityState = location.split(', ');
-    const forecastUrl = `http://api.wunderground.com/api/${key}/forecast/hourly/forecast10day/conditions/q/${cityState[1]}/${cityState[0]}.json`;
-    localStorage.setItem('location', location);
-    $.get(forecastUrl).then(forecast => {
-      this.handleWeatherSearch(forecast);
-    });
-  }
-  ```
-  ## Contributors
-  Justyna Field and Jack Bevis
+### Screen Shot
+![](http://recordit.co/Aybn2GpkeQ)
+
+### Installation & Setup Instructions
+
+* `git clone`
+* `npm install`
+* `npm start`  
+
+### Contributors
+Justyna Field and Jack Bevis
