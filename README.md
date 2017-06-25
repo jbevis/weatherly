@@ -19,7 +19,7 @@ Web application built using React JS, and designed for introduction to building 
 
 ### Screen Shot
 
-![](http://recordit.co/Aybn2GpkeQ.gif/notify)
+![](http://g.recordit.co/Aybn2GpkeQ.gif)
 
 ### Installation & Setup Instructions
 
