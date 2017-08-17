@@ -4,7 +4,7 @@
 
 Web application built using React JS, and designed for introduction to building in React, using ajax calls for api data, and testing using enzyme and jest testing libraries. User can search for weather by location, and receive current weather forecast, hourly, and ten day.
 
-[Weatherly](https://weatherly-jbevis.herokuapp.com/)
+[Weatherly](https://jbevis.github.io/weatherly/)
 * Click on link
 * Enter a location to view weather
 
